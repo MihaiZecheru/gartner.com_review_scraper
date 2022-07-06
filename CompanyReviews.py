@@ -31,7 +31,7 @@ class CompanyReviews(object):
     self.remaining_progress -= 15
 
     product_name_short = url[url.index('/vendor/') + 8 : url.index('/product')]
-    product_name_full = url[url.index('/product/') + 9 : -1]
+    product_name_full = url[url.index('/product/') + 9 :]
 
     self.csv_attributes = csv_attributes
     self.reviews = []
